@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import "@fontsource/source-sans-pro/700.css";
+import "@fontsource/source-sans-pro";
 const theme = extendTheme({
   fonts: {
     heading: `Source Sans Pro', sans-serif`,
@@ -10,7 +10,7 @@ const theme = extendTheme({
 
 export default function App({ Component, pageProps }) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );
