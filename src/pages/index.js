@@ -1,15 +1,14 @@
-
-import { Inter } from '@next/font/google'
-
-import Footer from '@/components/Footer/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Inter } from "@next/font/google";
+import "reset-css";
+import Footer from "@/components/Footer/Footer";
+import FirstSection from "@/components/FirstSection";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-    <h1>hello</h1>
-     <Footer/>
+      <FirstSection />
+      <Footer />
     </>
-  )
+  );
 }
